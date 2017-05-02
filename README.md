@@ -42,7 +42,7 @@ The dataset and requirements are the same with project 1, but the task is to sho
 
 #### Suggestions (new)
 
-- The dataset is quite large. You may select **part of them** that you are interested in.
+- The dataset is quite large. You may select **part of them** that you are interested in. For example, all books written by Charles Dickens, all fairy tale books or all books that is written in 18th century. For amazon review data, you can just select the type of reviews that you are interested in.
 - **(bonus point)** You will get more score by applying your algorithm to other dataset (such as Amazon review data).
 - **(bonus point)** You can see sentences as "baskets" as the slide says. However, I suggest you to try some different ways (and you will get more score), such as:
     - See paragraphs as baskets
@@ -76,7 +76,7 @@ The dataset and requirements are the same with project 1, but the task is to sho
 
 #### Candidate choices (Extreme, with at least 10 bonus point)
 
-- Task-Guided and Path-Augmented Heterogeneous Network Embedding
+- Task-Guided and Path-Augmented Heterogeneous Network Embedding
     - T. Chen and Y. Sun, Task-guided and Path-augmented Heterogeneous Network Embedding for Author Identification, WSDM’17
     - You may need [TensorFlow](https://www.tensorflow.org/) or some other deep learning software to run SGD and optimize the embedding result `U`.
 - Other papers listed in [this short summary](https://snowkylin.github.io/network-mining/heterogeneous-network/2017/04/25/heterogeneous-network-mining-index.html).
