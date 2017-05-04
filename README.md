@@ -1,5 +1,7 @@
 # Assignment of course "Data Warehousing and Data Mining Technology", Spring and Summer Semester, 2017.
 
+This is a more detailed instruction about the assignment of DW & DM course.
+
 ## Projects Description
 
 Project 1 & 2 are application-oriented. Project 3 & 4 are algorithm-oriented. You need to select **one** of these projects as your assignment.
@@ -15,15 +17,18 @@ Project 1 & 2 are application-oriented. Project 3 & 4 are algorithm-oriented. Yo
     - For example, If I choose "age = 18-22 and job = student", you need to show the distributions of some other attributes (like education and balance) conditional upon "age = 18-22 and job = student".
     - If you can only implement slice operation on one attributes, that is acceptable but the score will be lower.
 - Supportance of MySQL
-    - Able to import the .csv data to MySQL database and load data from it.
-    - **(updated)** You can assume that there is an empty database named "bank" with username "test" and empty password in the local MySQL database. This account have all privilege to manipulate the "bank" database.
-- **(updated)** Interactive UI
+    - <font color="red">**(updated)**</font> Your application should be able to import the .csv data to MySQL server (without help of management software such as PHPMyAdmin) and load data from it.
+    - <font color="red">**(updated)**</font> You can assume that there is an empty database named "bank" with username "test" and empty password in the local MySQL database. This account have all privilege to manipulate the "bank" database.
+- Showing 1~9 distribution of attributes at the same time.
+    - Users are able to select which attribute(s) to show.
+    - However, you need to import **all the data** to MySQL server, not 9 columns of them!
+- <font color="red">**(updated)**</font> Interactive UI
     - Users without much programming knowledge can operate your application by select, click and other simple actions.
     - Web or desktop based UI is OK. Command-line interface is not acceptable.
-- **(bonus point)** You will get more score if your application can support more OLAP operations, such as roll-up and drill-down.
-- **(bonus point)** You will get more score if your application can handle time and date. (you need to provide some other time-related data to test this feature)
+- <font color="blue">**(bonus point)**</font> You will get more score if your application can support more OLAP operations, such as roll-up and drill-down.
+- <font color="blue">**(bonus point)**</font> You will get more score if your application can handle time and date. (you need to provide some other time-related data to test this feature)
 
-#### Suggestions (new)
+#### Suggestions <font color="red">(new)</font>
 
 - You may use Python (with matplotlib, mysqldb and so on) or PHP to build the application.
 - If you choose PHP, [D3.js](https://d3js.org/), a really powerful tool for interactive data visualization, is recommmended as the front-end library.
@@ -36,20 +41,24 @@ The dataset and requirements are the same with project 1, but the task is to sho
 
 - Dataset: 
     - [Gutenberg dataset](https://web.eecs.umich.edu/~lahiri/gutenberg_dataset.html) (in FTP server)
-    - [Amazon review data](http://jmcauley.ucsd.edu/data/amazon/) (optional but recommended)
+    - [Amazon review data](http://jmcauley.ucsd.edu/data/amazon/) (optional)
+    - [DBLP](http://dblp.uni-trier.de/faq/How+can+I+download+the+whole+dblp+dataset) (title) (optional)
+    - [ACL](http://clair.eecs.umich.edu/aan/index.php) (title & abstract) (optional)
 - Your task: design and implement a data mining algorithm to find the "phrase" in these texts based on frequent patterns.
-- **(updated)** The "phrase" here is more general. Two words can be called "phrase" when they always appear together in one sentence (or paragraph, chapter, etc.), even if they are not adjacent. Sorry for this ambiguous point and thank @WillsNew.
+- <font color="red">**(updated)**</font> The "phrase" here can be more general. Here, two words can be called "phrase" when they always appear together in one sentence, even if they are not adjacent (maybe this will be more easy for you). Sorry for this ambiguous point and thank @WillsNew. However, it has more actual meaning when we only consider words that are adjacent. That needs some additional techniques and it is put in the "bonus point" part.
 
-#### Suggestions (new)
+#### Suggestions <font color="red">(new)</font>
 
 - The dataset is quite large. You may select **part of them** that you are interested in. For example, all books written by Charles Dickens, all fairy tale books or all books that is written in 18th century. For amazon review data, you can just select the type of reviews that you are interested in.
-- **(bonus point)** You will get more score by applying your algorithm to other dataset (such as Amazon review data).
-- **(bonus point)** You can see sentences as "baskets" as the slide says. However, I suggest you to try some different ways (and you will get more score), such as:
+- <font color="blue">**(bonus point)**</font> You will get more score by applying your algorithm to other dataset (such as Amazon review data, DBLP titles and so on).
+- <font color="blue">**(bonus point)**</font> You may want to do some "real phrase mining", i.e., finding phrases like "support vector machines", "reinforcement learning" and so on. That needs some additional techniques and you can find some of them in [this slide](http://hanj.cs.illinois.edu/cs512/slides/3-Textmining_Part1.pptx), such as KERT (page 19-21) and ToPMine (page 24-36). It is encourged to try these frequent-pattern-mining based methods (or design your own method) to improve your result. 
+- <font color="blue">**(bonus point)**</font> You can see sentences as "baskets" as the slide says. However, I suggest you to try some different ways, such as:
     - See paragraphs as baskets
     - See chapters as baskets
     - See books as baskets (this might be harder)
     - (For amazon review data) See reviews as baskets
 - You may apply some "stop word" methods, which is common in NLP related tasks.
+- You may use [Expat](https://docs.python.org/2/library/pyexpat.html) to read data from xml file (such as DBLP). It is a quite useful skill.
 - You may use Python for data preprocessing. However, if you want to make you program more efficient, you may use c++ to implement the core algorithm.
 
 ### Project 4: Implementation of a "influential" data mining algorithm
@@ -67,28 +76,28 @@ The dataset and requirements are the same with project 1, but the task is to sho
 - FP algorithm
 - PageRank (at least 10000 nodes and 100000 edges)
 
-#### Candidate choices (Hard, with at least 5 bonus point)
+#### Candidate choices (Hard, with at least 5 <font color="blue">**bonus point**</font>)
 
-- RankClus
+- <font color="red">**(updated)**</font>RankClus
     - Y. Sun, J. Han, P. Zhao, Z. Yin, H. Cheng, T. Wu, “RankClus: Integrating Clustering with Ranking for Heterogeneous Information Network Analysis”, EDBT’09
-- PathSim
+- <font color="red">**(updated)**</font>PathSim
     - Y. Sun, J. Han, X. Yan, P. S. Yu, and T. Wu, “PathSim: Meta Path-Based Top-K Similarity Search in Heterogeneous Information Networks”, VLDB’11
 
-#### Candidate choices (Extreme, with at least 10 bonus point)
+#### Candidate choices (Extreme, with at least 10 <font color="blue">**bonus point**</font>)
 
-- Task-Guided and Path-Augmented Heterogeneous Network Embedding
+- <font color="red">**(updated)**</font>Task-Guided and Path-Augmented Heterogeneous Network Embedding
     - T. Chen and Y. Sun, Task-guided and Path-augmented Heterogeneous Network Embedding for Author Identification, WSDM’17
     - You may need [TensorFlow](https://www.tensorflow.org/) or some other deep learning software to run SGD and optimize the embedding result `U`.
-- Other papers listed in [this short summary](https://snowkylin.github.io/network-mining/heterogeneous-network/2017/04/25/heterogeneous-network-mining-index.html).
+- <font color="red">**(updated)**</font>Other papers listed in [this short summary](https://snowkylin.github.io/network-mining/heterogeneous-network/2017/04/25/heterogeneous-network-mining-index.html).
 
 ## Environments & Languages (updated)
 
 - C++ (visual studio 2015 or gcc)
 - Python (Anaconda 4.3.1, Python 2.7 version)
 - MATLAB (MATLAB R2016b)
-- **(updated)** PHP is allowed (the version will be 5.6.25). Any front end languages and libraries are acceptable, such as JavaScript, JQuery and D3.js. 
-- **(updated)** Java is allowed (the version will be 1.8.0_121).
-- **(updated)** If you really want to use Node.js, please give a good reason and detailed instruction about how to establish the environment to run your program, and then it can be allowed.
+- <font color="red">**(updated)**</font> PHP is allowed (the version will be 5.6.25). Any front end languages and libraries are acceptable, such as JavaScript, JQuery and D3.js. 
+- <font color="red">**(updated)**</font> Java is allowed (the version will be 1.8.0_121).
+- <font color="red">**(updated)**</font> If you really want to use Node.js, please give a good reason and detailed instruction about how to establish the environment to run your program, and then it can be allowed.
 
 ## Template of Report (LaTeX)
 
