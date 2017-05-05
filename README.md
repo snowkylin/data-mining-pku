@@ -45,7 +45,7 @@ The dataset and requirements are the same with project 1, but the task is to sho
     - [DBLP](http://dblp.uni-trier.de/faq/How+can+I+download+the+whole+dblp+dataset) (title) (optional)
     - [ACL](http://clair.eecs.umich.edu/aan/index.php) (title & abstract) (optional)
 - Your task: design and implement a data mining algorithm to find the "phrase" in these texts based on frequent patterns.
-- <font color="red">**(updated)**</font> The "phrase" here can be more general. Here, two words can be called "phrase" when they always appear together in one sentence, even if they are not adjacent (maybe this will be more easy for you). Sorry for this ambiguous point and thank @WillsNew. However, it has more actual meaning when we only consider words that are adjacent. That needs some additional techniques and it is put in the "bonus point" part.
+- <font color="red">**(updated)**</font> The "phrase" here can be more general. Here, two words can be called "phrase" when they always appear together in one sentence, even if they are not adjacent (maybe this will be easier for you). Sorry for this ambiguous point and thank @WillsNew. However, it has more actual meaning when we only consider words that are adjacent. That needs some additional techniques and it is put in the "bonus point" part.
 
 #### Suggestions <font color="red">(new)</font>
 
@@ -74,21 +74,23 @@ The dataset and requirements are the same with project 1, but the task is to sho
 #### Candidate choices (Normal)
 
 - FP algorithm
-- PageRank (at least 10000 nodes and 100000 edges)
+    - <font color="red">**(updated)**</font> The gloceries dataset (in FTP server, or you can use dataset larger than this)
+- PageRank
+    - at least 10000 nodes and 100000 edges.
 
 #### Candidate choices (Hard, with at least 5 <font color="blue">**bonus point**</font>)
 
-- <font color="red">**(updated)**</font>RankClus
+- <font color="red">**(updated)**</font> RankClus
     - Y. Sun, J. Han, P. Zhao, Z. Yin, H. Cheng, T. Wu, “RankClus: Integrating Clustering with Ranking for Heterogeneous Information Network Analysis”, EDBT’09
-- <font color="red">**(updated)**</font>PathSim
+- <font color="red">**(updated)**</font> PathSim
     - Y. Sun, J. Han, X. Yan, P. S. Yu, and T. Wu, “PathSim: Meta Path-Based Top-K Similarity Search in Heterogeneous Information Networks”, VLDB’11
 
 #### Candidate choices (Extreme, with at least 10 <font color="blue">**bonus point**</font>)
 
-- <font color="red">**(updated)**</font>Task-Guided and Path-Augmented Heterogeneous Network Embedding
+- <font color="red">**(updated)**</font> Task-Guided and Path-Augmented Heterogeneous Network Embedding
     - T. Chen and Y. Sun, Task-guided and Path-augmented Heterogeneous Network Embedding for Author Identification, WSDM’17
     - You may need [TensorFlow](https://www.tensorflow.org/) or some other deep learning software to run SGD and optimize the embedding result `U`.
-- <font color="red">**(updated)**</font>Other papers listed in [this short summary](https://snowkylin.github.io/network-mining/heterogeneous-network/2017/04/25/heterogeneous-network-mining-index.html).
+- <font color="red">**(updated)**</font> Other papers listed in [this short summary](https://snowkylin.github.io/network-mining/heterogeneous-network/2017/04/25/heterogeneous-network-mining-index.html).
 
 ## Environments & Languages (updated)
 
