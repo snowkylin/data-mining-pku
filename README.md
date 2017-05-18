@@ -70,6 +70,7 @@ The dataset and requirements are the same with project 1, but the task is to sho
     - rank = xxxlib.PageRank(data)
 - If you want to implement other algorithms, please post an issue in this repo.
 - For the hard and extreme level, there is [a short summary](https://snowkylin.github.io/network-mining/heterogeneous-network/2017/04/25/heterogeneous-network-mining-index.html) of them. If you want to implement one of them, you are warmly welcomed to communicate with me (the teaching assistant) after reading the corresponding paper. Maybe I will give you some specific help depending on which paper you select.
+- <font color="red">**(updated)**</font> For the hard and extreme level, there are two slides that may help you: [Mining heterogeneous information networks](http://hanj.cs.illinois.edu/cs512/slides/2-Mining_Network.pptx), [Mining heterogeneous information networks: Part2](http://hanj.cs.illinois.edu/cs512/slides/2-Mining_Network_Part2.pptx).
 
 #### Candidate choices (Normal)
 
@@ -103,9 +104,11 @@ The dataset and requirements are the same with project 1, but the task is to sho
 
 ## Template of Report (LaTeX)
 
-To be updated...
+Please check the `report` folder in this repo to get the LaTeX template of report. It is suggested to use [TeXLive 2016](http://tug.org/texlive) (download ISO [here](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/), Internet installation is quite slow) and [TeXStudio](http://texstudio.sourceforge.net/). You may use XeLaTeX to compile the .tex file.
 
 If you are new to LaTeX, it is suggested to read [LaTeX-cn](https://github.com/wklchris/Note-by-LaTeX/releases) written by Chris Wu, which is really concise and useful.
+
+For others who do not use LaTeX, you can write your report according to the format shown in `report\report.pdf`.
 
 ## Q&A
 
