@@ -2,6 +2,8 @@
 
 This is a more detailed instruction about the assignment of DW & DM course.
 
+**NOTICE: The final exam will be held on 8:30 - 10:30 am, June 15th in Classroom 307, Science Teaching Building.**
+
 ## Projects Description
 
 Project 1 & 2 are application-oriented. Project 3 & 4 are algorithm-oriented. You need to select **one** of these projects as your assignment.
