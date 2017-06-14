@@ -2,7 +2,7 @@
 
 This is a more detailed instruction about the assignment of DW & DM course.
 
-**NOTICE: The final exam will be held on 8:30 - 10:30 am, June 15th in Classroom 307, Science Teaching Building.**
+**NOTICE: The final exam will be held on 8:30 - 10:30 am, June 15th in Classroom 307, Science Teaching Building. The assignment should be handed in before 23:59, June 15th.**
 
 ## Projects Description
 
